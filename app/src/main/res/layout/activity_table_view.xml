@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TableViewActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"/>
+
+    <TableRow android:background="#22FF"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_coloumn="1"
+            android:padding="3dp"
+            android:text="Open ..."/>
+
+        <TextView
+            android:layout_gravity="right"
+            android:padding="3dp"
+            android:text="Ctrl + O"/>
+    </TableRow>
+
+    <TableRow android:background="#22FF"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_coloumn="1"
+            android:padding="3dp"
+            android:text="Save ..."/>
+
+        <TextView
+            android:layout_gravity="right"
+            android:padding="3dp"
+            android:text="Ctrl + S"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#ff909090"
+        tools:ignore="MissingConstraints"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+        <TableRow android:background="#993F51B5"  >
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="open ..."/>
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Ctrl + O " />
+        </TableRow>
+
+        <TableRow android:background="#993F51B5"  >
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="Save"/>
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Ctrl + S " />
+        </TableRow>
+
+        <TableRow android:background="#FF0"  >
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="X"/>
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Ctrl + O " />
+
+        </TableRow>
+
+        <TableRow android:background="#FF0"  >
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="Export"/>
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Ctrl + E " />
+        </TableRow>
+
+        <TableRow android:background="#8BC34A"  >
+            <TextView
+                android:layout_column="1"
+                android:padding="3dip"
+                android:text="Quit"/>
+
+            <TextView
+                android:gravity="right"
+                android:padding="3dip"
+                android:text="Ctrl + Q " />
+
+        </TableRow>
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
